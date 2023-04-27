@@ -42,4 +42,12 @@ public class Aluno extends Pessoa {
 	public void metodoQualquer() {
 		super.setCpf("12345678900");
 	}
+	
+	public String obterEtiquetaEndereco() {
+		
+		String s = "Endereço do Aluno: ";
+		s += super.getEndereco();
+		
+		return s;
+	}
 }

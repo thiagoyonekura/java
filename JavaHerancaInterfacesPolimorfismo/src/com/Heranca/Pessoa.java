@@ -2,7 +2,7 @@ package com.Heranca;
 
 public class Pessoa {
 	private String nome;
-	private String edereco;
+	private String endereco;
 	private String telefone;
 	private String cpf;
 	
@@ -15,11 +15,11 @@ public class Pessoa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getEdereco() {
-		return edereco;
+	public String getEndereco() {
+		return endereco;
 	}
-	public void setEdereco(String edereco) {
-		this.edereco = edereco;
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
 	public String getTelefone() {
 		return telefone;

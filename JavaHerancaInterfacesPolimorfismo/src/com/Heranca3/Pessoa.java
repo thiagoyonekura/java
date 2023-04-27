@@ -14,7 +14,7 @@ public class Pessoa {
 	public Pessoa() {
 		nomeVisibilidade = "asdfghjk";
 	}
-	public Pessoa(String nome, String edereco, String telefone) {
+	public Pessoa(String nome, String endereco, String telefone) {
 		super();
 		this.nome = nome;
 		this.endereco = endereco;
@@ -26,11 +26,11 @@ public class Pessoa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getEdereco() {
+	public String getEndereco() {
 		return endereco;
 	}
-	public void setEdereco(String edereco) {
-		this.endereco = edereco;
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
 	public String getTelefone() {
 		return telefone;

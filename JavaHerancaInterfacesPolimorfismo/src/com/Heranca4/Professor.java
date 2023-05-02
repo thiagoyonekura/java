@@ -1,33 +1,39 @@
 package com.Heranca4;
 
 public class Professor extends Pessoa {
+
+	private double salario;
+	private String nomeCurso;
 	
-	private String salario;
-	private double nomeCurso;
-	
-	public String getSalario() {
+	public double getSalario() {
 		return salario;
 	}
-	public void setSalario(String salario) {
+	public void setSalario(double salario) {
 		this.salario = salario;
 	}
-	public double getNomeCurso() {
+	public String getNomeCurso() {
 		return nomeCurso;
 	}
-	public void setNomeCurso(double nomeCurso) {
+	public void setNomeCurso(String nomeCurso) {
 		this.nomeCurso = nomeCurso;
 	}
 	
-	public double calcularSalarioLiquido() {
+	public double calcularSalarioLiquido(){
 		return 0;
 	}
-	
-	public String obterEtiquetaEndereco() {
 		
+	public String obterEtiquetaEndereco(){
+
 		String s = "Endereço do Professor: ";
 		s += super.getEndereco();
 		
 		return s;
 	}
-	
+	@Override
+	public void imprimirEtiquetaEndereco() {
+		
+		System.out.println("Imprimindo endereço do Professor");
+		System.out.println(this.obterEtiquetaEndereco());
+		
+	}
 }

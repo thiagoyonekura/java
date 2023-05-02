@@ -1,19 +1,15 @@
 package com.Heranca3;
 
 public class Pessoa {
+
 	private String nome;
 	private String endereco;
 	private String telefone;
 	private String cpf;
 	
 	private String telefoneCelular;
-	// Como a Classe Pessoa não está extendendo nenhuma outra Classe, a Classe main será a Object
 	
-	protected String nomeVisibilidade;
-	
-	public Pessoa() {
-		nomeVisibilidade = "asdfghjk";
-	}
+	public Pessoa() {}
 	public Pessoa(String nome, String endereco, String telefone) {
 		super();
 		this.nome = nome;
@@ -51,4 +47,8 @@ public class Pessoa {
 		this.telefoneCelular = telefoneCelular;
 	}
 	
+	public String obterEtiquetaEndereco(){
+		
+		return endereco;
+	}
 }
